@@ -6,5 +6,6 @@
  */
 module crudJava {
 	requires java.sql;
-	requires mysql.connector;
+	requires mysql.connector.j;
+	
 }

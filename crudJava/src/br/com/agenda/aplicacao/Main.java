@@ -16,7 +16,7 @@ public class Main {
 		contato.setDataCadastro(new Date());
 		
 		contatoDAO.save(contato);
-		
+		 
 
 	}
 
