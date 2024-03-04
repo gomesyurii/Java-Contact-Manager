@@ -22,7 +22,7 @@ public class ContatoDAO {
 		try {
 			conn = ConnectionFactory.createConnectionToMySQL();
 			
-			
+			 
 			//Add valores esperados para query
 			pstm = (PreparedStatement) conn.prepareStatement(sql);
 			pstm.setString(1, contato.getNome());
