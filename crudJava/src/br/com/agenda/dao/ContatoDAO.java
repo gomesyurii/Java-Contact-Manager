@@ -31,6 +31,7 @@ public class ContatoDAO {
 			
 			pstm.execute();
 			
+			System.out.print("Contato salvo"); 
 			
 		} 
 		
