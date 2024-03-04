@@ -3,6 +3,7 @@ A CRUD Java application for a contact book.
 Description:
 
 This is a basic CRUD (Create, Read, Update, Delete) application written in Java that allows users to manage their contacts. Users can add, edit, and delete contacts, as well as view a list of all contacts.
+Chosen database was MySQL 8.0.36 Community  
 
 Features:
 Add new contacts
