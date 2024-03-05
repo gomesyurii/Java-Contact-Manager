@@ -11,18 +11,19 @@ public class Main {
 		
 		ContatoDAO contatoDAO = new ContatoDAO();
 		
-		Contato contato = new Contato();
-		contato.setNome("Yuri");
-		contato.setIdade(21);
-		contato.setDataCadastro(new Date());
-		
-		contatoDAO.save(contato);
-		 
+		  for (int i = 1; i <= 10; i++) {
+	            Contato contato = new Contato();
+	            contato.setNome("Contact name " + i);
+	            contato.setIdade(20 + i); // Apenas um exemplo para idade variável
+	            contato.setDataCadastro(new Date());
+
+	            contatoDAO.save(contato);
+	        }
 		
 		 
 		for(Contato c: contatoDAO.getContatos()) {
 			System.out.println("Contato " + c.getId() +": " + c.getNome());
-		}
+		} 
 	}
 
 }
