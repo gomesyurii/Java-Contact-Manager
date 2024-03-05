@@ -8,6 +8,7 @@ import br.com.agenda.model.Contato;
 public class Main {
 
 	public static void main(String[] args) {
+		
 		ContatoDAO contatoDAO = new ContatoDAO();
 		
 		Contato contato = new Contato();
@@ -17,7 +18,11 @@ public class Main {
 		
 		contatoDAO.save(contato);
 		 
-
+		
+		 
+		for(Contato c: contatoDAO.getContatos()) {
+			System.out.println("Contato " + c.getId() +": " + c.getNome());
+		}
 	}
 
 }
