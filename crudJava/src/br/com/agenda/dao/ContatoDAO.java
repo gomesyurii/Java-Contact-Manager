@@ -3,6 +3,9 @@ package br.com.agenda.dao;
 import java.sql.Connection;
 
 import java.sql.Date;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.mysql.cj.jdbc.ClientPreparedStatement;
 import br.com.agenda.factory.ConnectionFactory;
@@ -52,6 +55,22 @@ public class ContatoDAO {
 				e.printStackTrace();
 			}
 		}
+		
+	}
+	
+	public List<Contato> getContatos() {
+		
+		String sql = "SELECT * FROM contatos";
+		
+		List<Contato> contatos = new ArrayList<Contato>();
+		
+		Connection conn = null;
+		ClientPreparedStatement pstm = null;
+		
+		
+		ResultSet rset = null;
+		
+		return contatos;
 		
 	}
 	
