@@ -14,7 +14,7 @@ public class ConnectionFactory {
 	//BD Path
 	private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/agenda";
 	
-	//Conexão com o BD
+	//BD Connection
 	public static Connection createConnectionToMySQL() throws Exception {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		
